@@ -5,6 +5,10 @@
       <parameter name="url" value="https://www.saucedemo.com/"> </parameter>
       <parameter name="user" value="standard_user"> </parameter>
       <parameter name="password" value="secret_sauce"> </parameter>
+      <parameter name="formFirstName" value="Juan David"> </parameter>
+      <parameter name="formLastName" value="Camacho Guevara"> </parameter>
+      <parameter name="formZipCode" value="11121"> </parameter>
+      <parameter name="verificationText" value="Your order has been dispatched, and will arrive just as fast as the pony can get there!"> </parameter>
          <classes>
             <class name="tests.MainTests"> </class>
          </classes>  
