@@ -32,4 +32,8 @@ public class LoginPage extends BasePage {
 
     }
 
+    public Boolean amIHere(){
+        return loginButon.isDisplayed();
+    }
+
 }

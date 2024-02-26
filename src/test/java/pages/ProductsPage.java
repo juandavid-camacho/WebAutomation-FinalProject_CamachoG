@@ -22,6 +22,9 @@ public class ProductsPage extends BasePage {
     @FindBy(id = "react-burger-menu-btn")
     private WebElement sideMenuButton;
 
+    @FindBy(id = "logout_sidebar_link")
+    private WebElement logoutButton;
+
     public ProductsPage(WebDriver driver){
         super(driver);
     }
@@ -45,6 +48,12 @@ public class ProductsPage extends BasePage {
 
     public void openSideMenu(){
         sideMenuButton.click();
+    }
+
+    public LoginPage logout(){
+        waitForItem(logoutButton);
+        logoutButton.click();
+        return  new LoginPage(super.getDriver());
     }
 
 }

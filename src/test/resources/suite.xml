@@ -1,6 +1,6 @@
 <?xml version = "1.0" encoding = "UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
-<suite name = "All Test Suite">
+<suite name = "Juan David Camacho G - POM Practice Test Suite">
    <test verbose="2" preserve-order="true" name="C:\Users\juandavid.camacho\Documents\Curso TAE\Test Automation\Proyecto_Final\proyectoFinal_CamachoG">
       <parameter name="url" value="https://www.saucedemo.com/"> </parameter>
       <parameter name="user" value="standard_user"> </parameter>

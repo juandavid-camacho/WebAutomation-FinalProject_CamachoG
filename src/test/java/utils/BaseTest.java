@@ -28,9 +28,9 @@ public class BaseTest {
         return new ProductsPage(driver.getDriver());
     }
 
-   // @AfterMethod()
-    //public void afterMethod(){
-        //driver.getDriver().close();
-    //}
+    @AfterMethod()
+    public void afterMethod(){
+        driver.getDriver().close();
+    }
 
 }

@@ -10,7 +10,7 @@ import java.util.NoSuchElementException;
 
 public class MainTests extends BaseTest {
 
-    //@Test(priority = 1)
+    @Test(priority = 1)
     @Parameters({"formFirstName", "formLastName", "formZipCode", "verificationText"})
     public void purchaseProductTest(String firstName, String lastName, String zipCode, String verificationText){
 
@@ -36,16 +36,19 @@ public class MainTests extends BaseTest {
         cart.removeBackpack();
         cart.removeFleece();
         cart.removeOnesie();
-        
+
         Assert.assertTrue(cart.isEmpty());
 
     }
 
-    //@Test(priority = 3)
+    @Test(priority = 3)
     public void logoutTest(){
 
         ProductsPage products = loadProductsPage();
         products.openSideMenu();
+        LoginPage login = products.logout();
+
+        Assert.assertTrue(login.amIHere());
 
     }
 
