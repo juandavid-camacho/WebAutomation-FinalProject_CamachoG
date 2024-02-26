@@ -19,6 +19,9 @@ public class ProductsPage extends BasePage {
     @FindBy(className = "shopping_cart_link")
     private WebElement cartButton;
 
+    @FindBy(id = "react-burger-menu-btn")
+    private WebElement sideMenuButton;
+
     public ProductsPage(WebDriver driver){
         super(driver);
     }
@@ -38,6 +41,10 @@ public class ProductsPage extends BasePage {
     public CartPage goToCart(){
         cartButton.click();
         return new CartPage(super.getDriver());
+    }
+
+    public void openSideMenu(){
+        sideMenuButton.click();
     }
 
 }
